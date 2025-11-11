@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ebook: Como Vitalizar no Instagram — Página de Vendas</title>
+  <meta name="description" content="Aprenda um método prático para crescer no Instagram com conteúdo que engaja, Reels que viralizam e uma rotina simples de produção. Acesso imediato via Hotmart.">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="product">
+  <meta property="og:title" content="Ebook: Como Vitalizar no Instagram">
+  <meta property="og:description" content="Estratégias práticas, checklists e exemplos para aumentar alcance, seguidores e vendas no Instagram.">
+  <meta property="og:image" content="">
+  <meta name="theme-color" content="#ee0ca5">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#ff3b94;
+      --primary-2:#ff7a00;
+      --dark:#121018;
+      --text:#1f1235;
+      --muted:#6b6b6b;
+      --bg:#fff;
+      --success:#22c55e;
+      --warning:#f59e0b;
+      --shadow: 0 20px 60px rgba(0,0,0,.12);
+      --radius: 18px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, 'Helvetica Neue', Arial, sans-serif;
+      color:#1d1b20;
+      background: linear-gradient(180deg,#fff, #fff);
+    }
+    a{color:inherit}
+    .container{max-width:1100px;margin:0 auto;padding:0 24px}
+    /* Header */
+    header{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(6px);
+      background: rgba(255,255,255,.75);
+      border-bottom:1px solid #f0f0f0;
+    }
+    .head{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:14px 0;
+    }
+    .logo{
+      display:flex;align-items:center;gap:12px;font-weight:800;font-size:18px;
+    }
+    .logo-badge{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:6px 12px; border-radius:999px;
+      background:linear-gradient(45deg, var(--primary), #ff6a00);
+      color:#fff; font-weight:700; font-size:12px; letter-spacing:.5px;
+      text-transform:uppercase;
+    }
+    nav a{
+      margin:0 12px; text-decoration:none; color:#333; font-weight:600; font-size:14px;
+      opacity:.9
+    }
+    nav a:hover{opacity:1}
+    /* Hero */
+    .hero{
+      position:relative; overflow:hidden;
+      background: radial-gradient(1200px 600px at -10% -10%, #ffb703 0%, transparent 50%),
+                  radial-gradient(1000px 500px at 110% 10%, #ff3b94 0%, transparent 50%),
+                  radial-gradient(800px 400px at 50% 110%, #7c3aed 0%, transparent 50%),
+                  linear-gradient(135deg, #ff7a00 0%, #ff3b94 40%, #7c3aed 100%);
+      color:#fff;
+    }
+    .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;padding:72px 0}
+    .hero h1{font-size:48px;line-height:1.02;margin:12px 0 16px;font-weight:900;letter-spacing:-.02em}
+    .hero p{font-size:18px;opacity:.95;margin:0 0 18px}
+    .pill{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:8px 14px;margin-bottom:10px;border-radius:999px;background:rgba(255,255,255,.18);
+      border:1px solid rgba(255,255,255,.25);font-weight:700;font-size:13px
+    }
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .btn{
+      appearance:none;border:0;cursor:pointer;text-decoration:none;
+      padding:16px 22px;border-radius:14px;font-weight:800;letter-spacing:.2px;font-size:16px;
+      transition:.25s transform, .25s box-shadow, .25s filter; display:inline-flex; align-items:center; gap:10px;
+    }
+    .btn-primary{
+      background:linear-gradient(45deg, #ff7a00, #ff3b94);
+      color:#fff; box-shadow:0 8px 24px rgba(255,59,148,.35);
+      position:relative; isolation:isolate;
+    }
+    .btn-primary:hover{transform:translateY(-2px); box-shadow:0 14px 36px rgba(255,59,148,.45)}
+    .btn-outline{background:rgba(255,255,255,.14); color:#fff; border:1px solid rgba(255,255,255,.35)}
+    .secure{display:flex;align-items:center;gap:8px;margin-top:12px;opacity:.85;font-size:13px}
+    .hero-card{
+      background:#fff; color:#1d1b20; border-radius:var(--radius); box-shadow:var(--shadow); padding:24px; transform:rotate(1deg);
+    }
+    .ebook-cover{
+      width:100%; aspect-ratio:3/4; border-radius:14px;
+      background: radial-gradient(800px 200px at 0% 0%, #ff7a00 10%, transparent 60%),
+                  radial-gradient(800px 300px at 100% 0%, #ff3b94 10%, transparent 60%),
+                  radial-gradient(600px 400px at 50% 100%, #7c3aed 10%, transparent 60%),
+                  linear-gradient(135deg, #ff7a00, #ff3b94, #7c3aed);
+      display:flex; align-items:center; justify-content:center; color:#fff; font-weight:900; text-align:center;
+      padding:20px; position:relative; overflow:hidden;
+    }
+    .ebook-cover h3{font-size:28px; line-height:1.1; margin:0}
+    .badge-corner{
+      position:absolute; top:16px; left:16px; font-size:12px; font-weight:800; padding:6px 12px; border-radius:999px;
+      background:rgba(255,255,255,.2); border:1px solid rgba(255,255,255,.35);
+    }
+    .ig-icon{
+      position:absolute; right:-30px; bottom:-30px; width:180px; height:180px; opacity:.2;
+      background: conic-gradient(from 180deg at 50% 50%, #ff7a00, #ff3b94, #7c3aed, #ff7a00);
+      border-radius:30px; filter:blur(1px);
+      transform:rotate(-15deg);
+    }
+    /* Benefits */
+    section{padding:70px 0}
+    h2{font-size:32px; margin:0 0 10px; letter-spacing:-.01em}
+    .sub{color:var(--muted);margin:0 0 26px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .card{background:#fff;border:1px solid #eee;border-radius:16px;padding:22px; box-shadow:0 12px 30px rgba(0,0,0,.04)}
+    .card h3{margin:0 0 8px;font-size:18px}
+    .card p{margin:0;color:#4a4a4a}
+    .icon{
+      width:44px;height:44px;border-radius:12px; display:inline-grid; place-items:center; font-size:22px; margin-bottom:12px;
+      background:linear-gradient(45deg,#ffd54a,#ff7a00); color:#1d1b20; box-shadow:0 6px 16px rgba(255,122,0,.25)
+    }
+    .icon.pink{background:linear-gradient(45deg,#ff8bd8,#ff3b94); color:#1d1b20; box-shadow:0 6px 16px rgba(255,59,148,.25)}
+    .icon.purple{background:linear-gradient(45deg,#c4b5fd,#7c3aed); color:#1d1b20; box-shadow:0 6px 16px rgba(124,58,237,.25)}
+    /* What you'll learn list */
+    .list{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:18px}
+    .tick{
+      display:flex; gap:12px; align-items:flex-start; padding:14px 16px; border:1px dashed #eee; border-radius:14px; background:#fff;
+    }
+    .tick b{display:block; margin-bottom:2px}
+    .tick .check{font-size:18px; line-height:1.1}
+    /* For who */
+    .pill-list{display:flex; flex-wrap:wrap; gap:10px; margin-top:10px}
+    .pill-item{padding:10px 14px; border-radius:999px; border:1px solid #eee; background:#fff; font-weight:600; font-size:14px}
+    /* Offer */
+    .offer{
+      background: radial-gradient(600px 300px at 10% 10%, rgba(255,122,0,.2), transparent 60%),
+                  radial-gradient(600px 300px at 90% 90%, rgba(255,59,148,.2), transparent 60%),
+                  #faf7ff;
+      border:1px solid #f1eaff; border-radius:18px; padding:24px; box-shadow:0 16px 40px rgba(124,58,237,.1)
+    }
+    .price{
+      display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-top:8px
+    }
+    .price .tag{font-weight:800; font-size:28px}
+    .price small{color:#6b6b6b; font-weight:600}
+    .guarantee{display:flex; align-items:center; gap:10px; margin-top:10px; color:#3f3f3f}
+    /* Testimonials (placeholders) */
+    .testi{display:grid; grid-template-columns:repeat(3,1fr); gap:22px}
+    .quote{background:#fff;border:1px solid #eee;border-radius:16px;padding:18px}
+    .quote p{margin:4px 0 0;color:#444}
+    .quote .name{font-weight:800}
+    .quote .proof{font-size:12px;color:#777}
+    /* FAQ */
+    .faq-item{border:1px solid #eee;border-radius:14px;padding:16px;margin-bottom:10px;background:#fff}
+    .faq-q{display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-weight:800}
+    .faq-a{display:none;padding-top:8px;color:#444}
+    /* Footer */
+    footer{padding:36px 0 60px;color:#6b6b6b}
+    .fine{font-size:13px;margin-top:16px}
+    /* Sticky CTA */
+    .sticky-cta{
+      position:fixed; bottom:14px; left:14px; right:14px; z-index:70; display:flex; justify-content:center;
+    }
+    .sticky-cta .inner{
+      background:#111827; color:#fff; border:1px solid #222; padding:10px 12px; border-radius:14px;
+      display:flex; align-items:center; gap:12px; max-width:960px; width:100%; box-shadow:0 18px 40px rgba(0,0,0,.25);
+    }
+    .sticky-cta .inner .text{flex:1}
+    .sticky-cta .inner b{display:block}
+    .sticky-cta .btn{padding:12px 18px; border-radius:12px}
+    .hide-on-sticky{display:none}
+    /* Responsive */
+    @media (max-width: 980px){
+      .hero .wrap{grid-template-columns:1fr; padding:56px 0}
+      .grid-3{grid-template-columns:1fr 1fr}
+      .testi{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width: 680px){
+      .grid-3{grid-template-columns:1fr}
+      .list{grid-template-columns:1fr}
+      nav{display:none}
+      .hero h1{font-size:38px}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Product",
+    "name":"Ebook: Como Vitalizar no Instagram",
+    "description":"Método prático para crescer no Instagram com conteúdo que engaja, Reels que viralizam e uma rotina simples de produção.",
+    "brand": {"@type":"Brand","name":"Social Playbook"},
+    "offers": {
+      "@type":"Offer",
+      "url":"https://pay.hotmart.com/G102885405I",
+      "priceCurrency":"BRL",
+      "availability":"https://schema.org/InStock"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container head">
+      <div class="logo" aria-label="Logo Como Vitalizar no Instagram">
+        <span class="logo-badge">Ebook</span>
+        <span>Como Vitalizar no Instagram</span>
+      </div>
+      <nav>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#conteudo">Conteúdo</a>
+        <a href="#publico">Para quem é</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="topo">
+    <div class="container wrap">
+      <div>
+        <div class="pill">🚀 Acesso imediato • Atualizado</div>
+        <h1>Como <span style="text-decoration:underline">vitalizar</span> no Instagram<br>com um método simples e repetível</h1>
+        <p>Descubra o passo a passo para criar conteúdos que engajam, transformar ideias em Reels, usar hashtags e SEO a seu favor e construir uma audiência que compra de você.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="https://pay.hotmart.com/G102885405I" target="_blank" rel="noopener nofollow">
+            🛒 Comprar agora
+          </a>
+          <a class="btn btn-outline" href="#conteudo">Ver o que você aprende</a>
+        </div>
+        <div class="secure">✔ Compra 100% segura na Hotmart • Entrega automática do material</div>
+      </div>
+
+      <div class="hero-card">
+        <div class="ebook-cover" role="img" aria-label="Capa do ebook Como Vitalizar no Instagram">
+          <span class="badge-corner">EBOOK</span>
+          <h3>COMO VITALIZAR<br>NO INSTAGRAM</h3>
+          <div class="ig-icon" aria-hidden="true"></div>
+        </div>
+        <div style="margin-top:14px; font-size:14px; color:#3d3d3d">
+          <b>Formato:</b> PDF • <b>Páginas:</b> conteúdo direto ao ponto • <b>Nível:</b> iniciante ao avançado
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section id="beneficios">
+    <div class="container">
+      <h2>Por que este ebook é diferente?</h2>
+      <p class="sub">Nada de teorias infinitas. Você recebe um roteiro prático para sair do zero, produzir com consistência e crescer com estratégia.</p>
+      <div class="grid-3">
+        <div class="card">
+          <div class="icon">📈</div>
+          <h3>Aumento de alcance</h3>
+          <p>Aprenda a usar formatos e ganchos que amplificam a distribuição e colocam seu conteúdo na frente de mais pessoas.</p>
+        </div>
+        <div class="card">
+          <div class="icon pink">🎬</div>
+          <h3>Reels que performam</h3>
+          <p>Roteiros e estruturas para vídeos curtos que prendem a atenção do início ao fim — mesmo se você não gosta de aparecer.</p>
+        </div>
+        <div class="card">
+          <div class="icon purple">🧭</div>
+          <h3>Estrategia clara</h3>
+          <p>Crie um calendário simples de 30 dias, escolha temas e transforme ideias em posts, carrosséis e Reels prontos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What you will learn -->
+  <section id="conteudo">
+    <div class="container">
+      <div class="offer">
+        <h2>O que você vai aprender, capítulo a capítulo</h2>
+        <p class="sub">Conteúdo direto, exemplos práticos e checklists ao final de cada parte.</p>
+        <div class="list">
+          <div class="tick">
+            <div class="check">✅</div>
+            <div><b>Fundamentos de crescimento</b> — algoritmo na prática, como gerar sinais de qualidade e posicionamento de perfil.</div>
+          </div>
+          <div class="tick">
+            <div class="check">✅</div>
+            <div><b>Estrutura de conteúdo que engaja</b> — ganchos, promessas, provas e CTAs que fazem as pessoas salvarem e compartilharem.</div>
+          </div>
+          <div class="tick">
+            <div class="check">✅</div>
+            <div><b>Roteiro para Reels</b> — modelos de abertura, retenção e fechamento com exemplos para você adaptar em minutos.</div>
+          </div>
+          <div class="tick">
+            <div class="check">✅</div>
+            <div><b>Carrosséis que convertem</b> — como usar ritmo, hierarquia de informação e design limpo sem complicação.</div>
+          </div>
+          <div class="tick">
+            <div class="check">✅</div>
+            <div><b>Hashtags &amp; SEO</b> — encontre palavras‑chave, escreva legendas otimizadas e seja descoberto na busca.</div>
+          </div>
+          <div class="tick">
+            <div class="check">✅</div>
+            <div><b>Analytics simples</b> — o que acompanhar toda semana e como decidir os próximos posts com base em dados.</div>
+          </div>
+        </div>
+        <div class="price">
+          <div class="tag">🎁 Bônus dentro do ebook:</div>
+          <small>Checklist de publicação + calendário de 30 dias para imprimir.</small>
+        </div>
+        <div class="cta" style="margin-top:16px">
+          <a class="btn btn-primary" href="https://pay.hotmart.com/G102885405I" target="_blank" rel="noopener nofollow">Quero acesso imediato</a>
+          <a class="btn" style="background:#111827;color:#fff" href="#faq">Tirar dúvidas</a>
+        </div>
+        <div class="guarantee">🔒 Pagamento processado pela Hotmart. Em caso de dúvidas, conte com o suporte da plataforma e do produtor.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who is it for -->
+  <section id="publico">
+    <div class="container">
+      <h2>Feito para quem quer crescer de forma previsível</h2>
+      <p class="sub">Se alguma dessas frases descreve você, este material foi pensado para seus próximos 30 dias.</p>
+      <div class="pill-list">
+        <div class="pill-item">Empreendedores e prestadores de serviço</div>
+        <div class="pill-item">Criadores iniciantes</div>
+        <div class="pill-item">Negócios locais</div>
+        <div class="pill-item">Social media &amp; freelancers</div>
+        <div class="pill-item">Quem já posta, mas não engaja</div>
+        <div class="pill-item">Quem quer transformar seguidores em clientes</div>
+      </div>
+      <div class="cta" style="margin-top:18px">
+        <a class="btn btn-primary" href="https://pay.hotmart.com/G102885405I" target="_blank" rel="noopener nofollow">Comprar agora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials (illustrative) -->
+  <section id="depoimentos">
+    <div class="container">
+      <h2>Resultados de quem aplicou o método</h2>
+      <p class="sub">Depoimentos ilustrativos de alunos e clientes que colocaram as lições em prática.</p>
+      <div class="testi">
+        <div class="quote">
+          <div class="name">Marina • @marinacria</div>
+          <p>"Segui o roteiro de Reels do capítulo 3 e meu vídeo bateu 50k em três dias. Finalmente parei de postar no escuro."</p>
+          <div class="proof">Relato espontâneo</div>
+        </div>
+        <div class="quote">
+          <div class="name">Lucas • Agência LCM</div>
+          <p>"O framework de ganchos me ajudou a triplicar os salvamentos nos carrosséis dos clientes. O material é direto ao ponto."</p>
+          <div class="proof">Relato espontâneo</div>
+        </div>
+        <div class="quote">
+          <div class="name">Bianca • Loja local</div>
+          <p>"Organizei 30 dias de conteúdo com o calendário do ebook e bati meu melhor mês em alcance e pedidos no WhatsApp."</p>
+          <div class="proof">Relato espontâneo</div>
+        </div>
+      </div>
+      <div class="fine" style="margin-top:10px; font-size:12px; color:#7a7a7a">Resultados variam conforme nicho, esforço e consistência.</div>
+    </div>
+  </section>
+
+  <!-- Author -->
+  <section id="autor">
+    <div class="container">
+      <div class="grid-3">
+        <div class="card" style="grid-column: span 2">
+          <h2>Quem escreveu</h2>
+          <p class="sub">Conteúdo produzido por especialista em marketing digital e criação de conteúdo para Instagram.</p>
+          <p>Depois de anos testando formatos e gerenciando perfis de diferentes nichos, organizamos neste ebook as práticas que mais geram alcance, seguidores de qualidade e vendas. O objetivo é simples: ajudar você a produzir com clareza e consistência — sem depender de “sorte” do algoritmo.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="https://pay.hotmart.com/G102885405I" target="_blank" rel="noopener nofollow">Garantir meu acesso</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>O que você recebe</h3>
+          <ul style="margin:0; padding-left:18px; line-height:1.8">
+            <li>Ebook em PDF para leitura em qualquer dispositivo;</li>
+            <li>Exemplos práticos, modelos de roteiro e checklists;</li>
+            <li>Atualizações futuras incluídas nesta edição.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <h2>Perguntas frequentes</h2>
+      <div class="faq-item">
+        <div class="faq-q">Como recebo o ebook? <span>＋</span></div>
+        <div class="faq-a">O pagamento é processado pela Hotmart. Assim que a compra é confirmada, você recebe acesso automático ao conteúdo pela própria plataforma.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Preciso aparecer nos vídeos? <span>＋</span></div>
+        <div class="faq-a">Não necessariamente. O material inclui ideias e estruturas para conteúdos com e sem aparecer, além de alternativas usando voz, texto e B‑roll.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Funciona para qualquer nicho? <span>＋</span></div>
+        <div class="faq-a">Os princípios de conteúdo, retenção e distribuição funcionam em diferentes nichos. Você verá exemplos e como adaptar ao seu mercado.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Há suporte ou atualização? <span>＋</span></div>
+        <div class="faq-a">Sim, esta edição inclui atualizações futuras do próprio ebook. Em caso de dúvidas sobre o acesso, o suporte da Hotmart pode ajudar.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Posso pedir reembolso? <span>＋</span></div>
+        <div class="faq-a">Você pode solicitar reembolso conforme as políticas da Hotmart, diretamente pela plataforma.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section>
+    <div class="container">
+      <div class="offer" style="text-align:center">
+        <h2>Pronto para vitalizar seu Instagram?</h2>
+        <p class="sub">Comece hoje. Aplique os modelos, economize horas e publique com confiança.</p>
+        <a class="btn btn-primary" href="https://pay.hotmart.com/G102885405I" target="_blank" rel="noopener nofollow">Comprar agora</a>
+        <div class="secure">Pagamento seguro • Acesso imediato</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div>© <span id="y"></span> — Como Vitalizar no Instagram. Todos os direitos reservados.</div>
+      <div class="fine">Este site não é afiliado ao Instagram. Instagram é uma marca registrada da Meta Platforms, Inc. As informações aqui apresentadas têm caráter educacional.</div>
+    </div>
+  </footer>
+
+  <!-- Sticky CTA -->
+  <div class="sticky-cta" id="sticky">
+    <div class="inner">
+      <div class="text">
+        <small style="opacity:.8">Ebook • Acesso imediato</small>
+        <b>Como Vitalizar no Instagram</b>
+      </div>
+      <a class="btn btn-primary" href="https://pay.hotmart.com/G102885405I" target="_blank" rel="noopener nofollow">Comprar agora</a>
+    </div>
+  </div>
+
+  <script>
+    // Current year
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // FAQ toggles
+    document.querySelectorAll('.faq-item').forEach(item=>{
+      item.querySelector('.faq-q').addEventListener('click',()=>{
+        const ans = item.querySelector('.faq-a');
+        const isOpen = ans.style.display === 'block';
+        document.querySelectorAll('.faq-a').forEach(a=>a.style.display='none');
+        document.querySelectorAll('.faq-q span').forEach(s=>s.textContent='＋');
+        ans.style.display = isOpen ? 'none' : 'block';
+        item.querySelector('.faq-q span').textContent = isOpen ? '＋' : '－';
+      });
+    });
+
+    // Hide sticky bar near footer
+    const sticky = document.getElementById('sticky');
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){ sticky.classList.add('hide-on-sticky'); }
+        else{ sticky.classList.remove('hide-on-sticky'); }
+      });
+    }, {threshold: .2});
+    observer.observe(document.querySelector('footer'));
+  </script>
+</body>
+</html>
